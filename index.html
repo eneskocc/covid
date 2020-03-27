@@ -9,51 +9,50 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
       <title>Covid-19</title>
+      <style>
+            .wh{
+                  width: 7vh;
+                  height: 4vh;
+            }
+      </style>
 </head>
 <body>
-      <div class="text-center text-dark p-5">
-            <h1>Covid-19</h1>
-          </div>
-      <div class="container">
-            <div class="row">
-                  <div class="col-md-12">
-                        <table class="table table-hover">
-                              <thead>
-                                <tr>
-                                  <th scope="col">Country</th>
-                                  <th scope="col">cases</th>
-                                  <th scope="col">Today Cases</th>
-                                  <th scope="col">deaths</th>
-                                  <th scope="col">today Deaths</th>
-                                  <th scope="col">recovered</th>
-                                  <th scope="col">critical</th>
-                                </tr>
-                              </thead>
-                              <tbody id="body">
-                              
-                              </tbody>
-                        </table>
+     
+      <div class="container-fluid">
+            <div class="row d-flex justify-content-center">
+                  <div class="d-flex justify-content-center text-dark p-5">
+                        <h1>Covid-19</h1>
                   </div>
+                  <div class="col-sm-10">
+                        <canvas id="myChart"></canvas>
+                  </div>
+                 
+                  <div class="col-sm-10" id="table">
+                        
+                  </div>
+                
+                  <footer class="container py-5 mt-4 d-flex justify-content-center">
+                        <div class="row">
+                            <div class="col-12 col-md d-flex justify-content-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mb-2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="14.31" y1="8" x2="20.05" y2="17.94"></line>
+                                    <line x1="9.69" y1="8" x2="21.17" y2="8"></line>
+                                    <line x1="7.38" y1="12" x2="13.12" y2="2.06"></line>
+                                    <line x1="9.69" y1="16" x2="3.95" y2="6.06"></line>
+                                    <line x1="14.31" y1="16" x2="2.83" y2="16"></line>
+                                    <line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
+                                </svg>
+                                <small class="d-block mb-3 text-muted"><h6>  by Enes KOÇ © 2020</h6></small>
+                            </div>
+                            
+                        </div>
+                    </footer>
             </div>
       </div>
       
-          <footer class="container py-5 mt-4 d-flex justify-content-center">
-            <div class="row">
-                <div class="col-12 col-md d-flex justify-content-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mb-2">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <line x1="14.31" y1="8" x2="20.05" y2="17.94"></line>
-                        <line x1="9.69" y1="8" x2="21.17" y2="8"></line>
-                        <line x1="7.38" y1="12" x2="13.12" y2="2.06"></line>
-                        <line x1="9.69" y1="16" x2="3.95" y2="6.06"></line>
-                        <line x1="14.31" y1="16" x2="2.83" y2="16"></line>
-                        <line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
-                    </svg>
-                    <small class="d-block mb-3 text-muted"><h6>  by Enes KOÇ © 2020</h6></small>
-                </div>
-                
-            </div>
-        </footer>
-<script src="./index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<script src="index.js"></script>
+
 </body>
 </html>
