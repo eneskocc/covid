@@ -9,9 +9,7 @@
                         <tr>
                               <th scope="col">Country</th>
                               <th scope="col">cases</th>
-                              <th scope="col">Today Cases</th>
                               <th scope="col">deaths</th>
-                              <th scope="col">today Deaths</th>
                               <th scope="col">recovered</th>
                         </tr>
                   </thead>
@@ -45,9 +43,9 @@
                                     <img src="${covid.countryInfo.flag}" alt="..." class="img-fluid wh">${"  "}${covid.country}
                               </th>
                               <td>${covid.cases}</td>
-                              <td class="${dg1}">${a1}</td>
+                              
                               <td>${covid.deaths}</td>
-                              <td class="${dg2}">${a2}</td>
+                              
                               <td>${covid.recovered}</td>
                         </tr>
                   `;
