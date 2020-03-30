@@ -67,7 +67,7 @@ function myfun(event) {
                               label: 'My First dataset',
                               backgroundColor: 'rgb(256,256,256,0)',
                               borderColor: 'rgb(255, 99, 132)',
-                              data: data,data
+                              data: data
                         }],
                        
                   },
