@@ -41,7 +41,7 @@ function anasayfa(){
 
       };
 
-      xmlhttp.open("GET", "https://corona.lmao.ninja/countries/", true);
+      xmlhttp.open("GET", "https://corona.lmao.ninja/v2/countries/", true);
       xmlhttp.send();
 }
       
